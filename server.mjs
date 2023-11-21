@@ -39,7 +39,7 @@ app.use('/api/v1', authRouter);
 /* Authentication Barrier */
 ////////////////////////////////////////////////////////////////
 
-app.use((req, res, next)=>{
+app.use('/api/v1',(req, res, next)=>{
 
     const authenticationtoken = req.cookies.authenticationtoken;
     console.log("cookies: ", req.cookies);
