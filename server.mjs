@@ -96,6 +96,7 @@ app.use('/api/v1', postRouter);
 
 
 app.use(express.static(path.join(__dirname, './web/build')))
+app.use("*", express.static(path.join(__dirname, 'web/build')))
 
 ////////////////////////////////////////////////////////////////
 /* PORT Listener */
